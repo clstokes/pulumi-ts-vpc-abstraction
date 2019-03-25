@@ -13,6 +13,13 @@ Example of a minimal VPC abstraction across AWS, Azure, and GCP.
     // import {MyVpc} from "./vpc-gcp";
     ```
 
+1. Run the appropriate AWS or GCP command below if you chose AWS or GCP as your cloud provider.
+
+    ```
+    pulumi config set aws:region <region>
+    pulumi config set gcp:region <region>
+    ```
+
 1. Run `pulumi up`.
 
     ```

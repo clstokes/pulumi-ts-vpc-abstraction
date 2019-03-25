@@ -7,7 +7,7 @@ export class MyVpc extends pulumi.ComponentResource implements Vpc {
     public readonly subnetIds: pulumi.Output<string>[];
 
     constructor(args: AzureVpcArgs) {
-        super("custom:gcp:Vpc", args.name, {});
+        super("custom:azure:Vpc", args.name, {});
 
         const resourceGroup = new azure.core.ResourceGroup(args.name, {
             name: args.name,
